@@ -1,11 +1,13 @@
-version: "3.8"
+version: "3.3"
 services:
   bot:
+    restart: always
     image: ericrigsb/bitl_craig
     working_dir: /bitl_craig
     volumes: 
       - ./data/rec:/bitl_craig/rec
-      - ./config.json:/bitl_craig/config.json:ro
+      - ./overrides/config.json:/bitl_craig/config.json:ro
+      - ./overrides/index.php:/bitl_craig/web/index.php:ro
     networks:
       - host
     ports:

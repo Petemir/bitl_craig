@@ -120,6 +120,7 @@ dist
 
 # config
 config.json
+overrides/config.json
 
 # recording data
 data/rec/*

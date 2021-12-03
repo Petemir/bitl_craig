@@ -22,7 +22,7 @@ require_once "vendor/autoload.php";
 
 require "../locale.php";
 
-$db = new SQLite3("/home/yahweasel/craig/craig.db");
+$db = new SQLite3("/bitl_craig/craig.db");
 $db->exec("PRAGMA journal_mode=WAL;");
 
 $formats = array(
